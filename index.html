@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dungeon Escape</title>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        
+        <div id="ui-layer">
+            <div id="health-container">
+                <span>HP:</span>
+                <div class="health-bar">
+                    <div id="health-fill"></div>
+                </div>
+            </div>
+            
+            <div id="inventory">
+                <div class="inventory-slot" id="key-slot"></div>
+                <div class="inventory-slot" id="sword-slot"></div>
+                <div class="inventory-slot" id="potion-slot"></div>
+            </div>
+            
+            <div id="minimap"></div>
+            
+            <div id="combat-log"></div>
+        </div>
+        
+        <div id="puzzle-modal">
+            <div id="puzzle-title">Puzzle Challenge</div>
+            <div id="puzzle-description">Solve this puzzle to proceed...</div>
+            <div id="puzzle-content"></div>
+            <div id="puzzle-buttons">
+                <button class="puzzle-button" id="puzzle-submit">Submit</button>
+                <button class="puzzle-button" id="puzzle-cancel">Cancel</button>
+            </div>
+        </div>
+        
+        <div id="level-info">
+            <div id="level-number">Level 1</div>
+            <div id="level-description">The dark and damp dungeon awaits...</div>
+        </div>
+        
+        <div id="tutorial-overlay">
+            <div id="tutorial-box">
+                <div id="tutorial-title">Welcome to Dungeon Escape!</div>
+                <div id="tutorial-text">Use arrow keys or WASD to move. Explore the dungeon, find the key, and escape through the exit door. Watch out for monsters and traps!</div>
+                <button id="tutorial-next">Got it!</button>
+            </div>
+        </div>
+        
+        <div id="start-screen">
+            <div id="title">DUNGEON ESCAPE</div>
+            <button id="start-button">START GAME</button>
+        </div>
+        
+        <div id="game-over-screen">
+            <div id="game-over-text">GAME OVER</div>
+            <button id="retry-button">TRY AGAIN</button>
+        </div>
+        
+        <div id="win-screen">
+            <div id="win-text">YOU ESCAPED!</div>
+            <button id="play-again-button">PLAY AGAIN</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
